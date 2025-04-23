@@ -1,11 +1,15 @@
 import tkinter as tk
-def main () :
-    #crear ventana principal
+def main() :
     ventana = tk.Tk ()
-    ventana.title ("fefeneta")
-    ventana.geometry("500x400")
-    ventana.configure(bg="black")
-    ventana.mainloop ()
+    ventana.title ("ejercicio 2")
+    ventana.geometry("700x700")
+    ventana.configure(bg="lightblue")
+    
+    etiqueta = tk.Label(ventana, text="ejercicio 2", font=("arial", 16))
+    etiqueta.pack()
+    etiqueta = tk.Label(ventana, text="federico", font=("arial", 16))
+    etiqueta.pack()
+    ventana.mainloop()
 
 if __name__=="__main__":
     main()
