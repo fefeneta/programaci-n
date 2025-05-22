@@ -11,28 +11,28 @@ def descargarImagenPortada():
     return imagen
 
 def descargarImagenFondo():
-    urlImagen = "https://github.com/fefeneta/imagenes/blob/main/portada.png?raw=true"
+    urlImagen = "https://p16-pu-sign-no.tiktokcdn-eu.com/obj/tos-no1a-p-0037-no/oELfBf0XEiYkIhxCMAngiBv9ERRuAvB7XFBw0V?lk3s=81f88b70&x-expires=1747944000&x-signature=%2FPg5OHhuusi7LF%2FP3rTWhl%2Ff%2Bks%3D&shp=81f88b70&shcp=-"
     datosImagen = urlopen(urlImagen)  
     imagenBinaria = datosImagen.read()  
     imagen = Image.open(BytesIO(imagenBinaria))
     return imagen
 
 def descargarImagenCapsulas():
-    urlImagen = "https://github.com/fefeneta/imagenes/blob/main/cafetera-nespresso-inissia-red-07l-19bares-roja-14276.png?raw=true"
+    urlImagen = "https://ss625.liverpool.com.mx/xl/1111653557.jpg"
     datosImagen = urlopen(urlImagen)  
     imagenBinaria = datosImagen.read()  
     imagen = Image.open(BytesIO(imagenBinaria))
     return imagen
 
 def descargarImagenItaliana():
-    urlImagen = "https://github.com/fefeneta/imagenes/blob/main/cafetera-nespresso-inissia-red-07l-19bares-roja-14276.png?raw=true"
+    urlImagen = "data:image/jpeg;base64,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"
     datosImagen = urlopen(urlImagen)  
     imagenBinaria = datosImagen.read()  
     imagen = Image.open(BytesIO(imagenBinaria))
     return imagen
 
 def descargarImagenExpresso():
-    urlImagen = "https://github.com/fefeneta/imagenes/blob/main/cafetera-nespresso-inissia-red-07l-19bares-roja-14276.png?raw=true"
+    urlImagen = "data:image/jpeg;base64,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"
     datosImagen = urlopen(urlImagen)  
     imagenBinaria = datosImagen.read()  
     imagen = Image.open(BytesIO(imagenBinaria))
@@ -40,7 +40,7 @@ def descargarImagenExpresso():
 
 
 def descargarImagenChemex():
-    urlImagen = "https://github.com/fefeneta/imagenes/blob/main/cafetera-nespresso-inissia-red-07l-19bares-roja-14276.png?raw=true"
+    urlImagen = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIWFRUWEBUXFRAXFRUVDxAQFRUWFhURFhUYHSggGBolHRUXITEhJSkrLi4uFx8zODMsNygtMCsBCgoKDg0OFxAQGS0lHR8tLS0tLS0tLS0tLS8tLS0tLS0tKystLS0tLSstKy0tLSsrLS0rLS0tLS0tLS0rLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAECAwUGBwj/xABBEAABAwIEAgcGAwYFBAMAAAABAAIRAwQFEiExQVEGEyJhcYGRFDJSobHwQsHRBxUjM2JygpLS4fEWg5OyU1Rj/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAEDAgQF/8QAIhEBAQACAgICAwEBAAAAAAAAAAECEQMSITEEQRNRYSIU/9oADAMBAAIRAxEAPwD0vEPcKnZnsDwVDsPkQXJhYEbOXSD5TygPYz8RS9kPxFAfKUoA2pA95C2LHvBOaIKDXJTIP2R3xpvZHfGgNWfP8fyUvZX/ABqDbFwdmz6oNFMhepf8aiaNT40BoSQXU1PjVN06owA5pkoNKU8oFtOqR7yXVVfiQGkqL9j4IQ063xBRdSrcwgtw/wB0+KJQFChVaI0U/wCN3IMHpjSyvp1OYyny2Q9u+RPdC0ektvUfQcXD3e0FgYZcyIUWCQMr+4qm6tw4FqvriR4apOdLQ71WPqtvc24rEbWJB4Lnrimu9xe0zarkr+3Ik+q1lYZ47Y7TBWlSqB4g7oGoyE1N5BkLmxhMutHdSeaSr9tKS507/JH0YmcnJUC5atCTJpSlUNU2PggsIOjv7kZUOh8EDhR0d4oNGU0ppSlA6SZIIHVFzdMpjNUe1gkCXEAEnQATue5NeVHNY4t97KcgPF8Q0Rx1hcLh/RS6uHdffOHWEdkZtaQIg5YkAxpoB4qW6XTpavS+xaSDcNkcszh6tBVdTpDa1sop12Ez7pOVx8nQhqHQe3aIgHyP5uQmJdC6EaDflIPoSQpvL9Jp2jNh4J15rRqXeHHsONSiPeou2A3kcvEei7jA8bpXTM9M6j3mH32HvHLvSXY0kkkl0EkkkgruaWdjmni0j1C8xtnFj3NPBxHzXqS816TUuqu3cnQ4eaDTY+Y79PVRtjDiw8fqh7Z8hSu3EZXjulZZz7bYX6WVqWhHouaxa14jzXVPdmAcOIWde0vQ7pKmUcDcUoKCe2FvYrbZSR6LGcJXby8mKiElPKUlNMNV9Ide07FRL151YdJCy4LHAkHbuXV0MYDtgV29jYLk2ZAC+/pKc3v9JQHOOhQeGfi8VWcQHwlUWV3lmWnUoNoFOs8YiOR9Fa28n8LvQqAtLn4KqnUJ2Yfp9VeKZIiNSefAcz97JsVhSVrbZ3CPVTFk/kPVAMhMQ/D/AHLUNjU+H5hA4jaVNOw7fgJ+iuxG8smVWQ4cNHcQvPMWwevZ1euoGCDIj3Xg8I28tjwgr06lTcRIB+hnwKqvLcFpbUb2TzGi5uixidGOk9O7blPYqgdqnz5lvMd3Bb6846SdHXU39dQdBBkOB1BHP9fWRtsdFel4rHqbjsVhoCdG1D+TvrwSVN/VdekodaOYT5xzC6VJcP8AtHoR1VUc8p+oXb5hzWD01tRVtHji2HDyQchh9zEd4WlmDmuby1Hg77K5/DdW+a36dP8Alu4Opuaf7muBHyeVxk7x9qsPrbsPDZWVmSEDdkseHDmtFjgRPAhcRpXP4jbZmkcQuVuacFd9dUuPr4LlsZs4M8Cu5WWUZWdqSh1BTrpj0jZwh7s+d25XZ4VdOD5IgHjwVNr0bY0tMnTguufYMNGABMJt7f8AmuvKujXBRNN44hZtOkGNlzteSspVkYZY3H203NHAKs03fCUrepI8Fb18brDPLTTGbDuBG4ITtcivadFS64Wdz0662raD1c+pA8fv80G25Vzas8kx58b9peLIZQqkImncmJWcKqsbV0XU5pftPx39DxeHkE5eTqUE2qrOv71fyT7p1/gxyiH81S6vzVJuFjlySX20mFsDYjh9IkECCdwNvGFxHSzogHA1KI1GscR4d334904yZTL2yeHlsleZdHOkRZUFC8cRwbWO3KHn8/VegjD2cCfHgue6T9GWVycjYdE6c1z+FdILjDndTcNc+jMNd+On3DmO70VT17eg/u9vMqFbDWlpEnVpEeIQVv0vsniRcMGmznBrh5HVZWNdPqTOxaN66q4w10Hq2k8Q06vPyTa2yMyzwZto3rLysylmJ6ugZNapro4ge609/wAloWzw9sDYGW+ehWBc9H7wxdXM1HukkHtGlyLm/cI/BOsEAjZRZSxWmq8LqyC3lstTE7QuaYE8gsKlb1WukNjXiuNNd+GnVHNc10nr5KcRqTA5rpqFvUqGGtJ8BoPPgr6fRBlaoPaCYA/ltO/ieHkupHFseR9c/kUl7p/0dY//AF2/5n/6k6rnw5O36VAObTe0tMak6LohiIyyDAI5rgukNNrQ3rPfOgPensryaRbVJBYJb38lhl/m+XunLcctXy37vGBngydVqWtxIXnNDFJ3EnN+a6/Dr9roAOsbLbHJ5+bzdx0PtzmFuoieXH4SeErRNcObO3nm+iw21A4RP+x5oi1rCIO4WPPj4OG+RhrEfZUuukf8IQlRp3MiJXzt17usEdeOaIp3A5/VZ4qCd5V7K3Nee241r1lG+1D7lXNuxHH0KyjXKsbWkKflq/jjRF4OaelcSd481ml6k6sDwC6xty91LhIPdcudMADvJ4eASp0S46u0BBgdlpI27z6qLGwEZSZA+vivX8Xh7cnb6jzfIz64a+6sSTFygKncvrPnBz/OHgnv8OpVgW1GBw+aaf4oPci5UHKVP2e2ZM9sdwdAWvg/R22ttaVIB3/yHtVP8x1HktPrApEppNQoQlXDKTtcsHm3REh6WZFBfuinzd6j9FOnhVEa5AfHX5FGApi8IHa0AQBA5DQIOkf4zvBGoGj/ADneCoNSTpIPILnFaVV3U+8Wn3u8ciukFCi9gJA0bqYXEW2FU6IDySXkeSTsWqk5WnTiFhnNPZnyWTdY2K0nNqvLQ7JnMOg5fVG4DcPDjvqtyjfOjLUy5DpBGqxrZwpXEHYnTkuprKeGWN1/qeXX29s4wc5TYkatJoqNfMHtD+nn5K2jUSvn9nzXdm/DCXV2jYYw4uyudMjTSNeSt/eJaT2dJ+Swbmj1TshmNHU3d3KeY29FdXuw5geOIgjk4bj814OXjkvh9Hhztnlq/vhrTJBidVYekVLv35t/Vce6s5wdJ8ttPzQKyvxsc/bT81x+noDscYBJBA8R+qHrdK6LeDiY0gA/muHLjzUadOTv5pj8HD7pl8q/Ud3T6SAt0a4knbiAjf3v2HO4tGnLMdAPvkuYwShJk7Dj3ff1W8LPMaVIaF7i8g7wNG792Yr0YfGwx9PPl8jOtnA7mq7+I+Xcm8J+JbXtj/gVWHtDSWjYCB4BHhy9mOMxmo8ueVyu6FdeHYthOy8aFZc7KLWDkF04DVLwZxofRFMq5tk5YI2CGoMEygKIjdT60QqVNw0QTFYBRfcjjohK1OYV1KkNjqiJi5ZzTioOab2ZvJRdbN5ICRdMH4gg6FdvXO1GyIZZsjUJCxp8kVd1zfiHqkqvY2ckkHgdXEqji1kSdgpXVx1LcjffO55dy0cVtqVpVJBmG6DvXMVarnOJO5MrOztfPqJllcvbXwu3dVqNLnT3LoHUhm1GoWN0deGvbzldhilqC3O3fj3ruTS7utBqFRTvanZHig6L096/sjxVcuvssFpXVsA8lrs0h4DS5sDbtA6HyPesa8/Z/WbPVXFJwOuVwcwj0LkVg185gAB0P1Rt3eO3Xg5bcc7t9Lgkywmq4q66H37ZhtJ39tT9QFl18Evm70R5PZ+q7CvfvgiTx48DsVmXF0TzUnLf07y4p+65h9jdDV1ID/Gz9VZZazmEEGI7/HzHqtO8eSDruFm2DS6oGjQDSebj+i1wzuXuMM8Jj6df0asw4BvEmTp+EEa/fJYGIVDVvn1+DKgFPXstbT0aQBzifNdLQqdVbVao0cGhje6YAPmXBBdF8JFR4J90QXeHJaefplp3GE1CRJ3LQT4rSBWbZHtORwK3YU1wdApNKpu3xHipscgm/Yoehsr6h0PghbZ8hAUE9Q6Ktzkrh0QgSupqpWU3Ii4KL06g5UginsnKjS2TotOkmSRNvnDErt1aoXnidByCqaRoqgE+RQalvUbz1nRb1jj5pAsqdoEady5WgIg8kWLhr3bdyg0RjjJ24p7nG2FsCd0O3CwdYVwwhvJdaTbXscdpZRrqu5dZ5mAlsEtBII1EjYjgV5xQwhoIIGxn0XoL8UuKbQatHOC0HO33oIB1gHXyC8XzPHV7vg477eWLiFrGvjKxq7Nx9/f6LYu8aou3zDuIEfI/ksa5vKROjx5h/I/0ryY5V7ssNAa1TKCeX5LHsblzO3Ouvqdz80bfhzg4NLTLY99o5/EQqsMw9mcdfUaymNXHOwyBwhpJ/wBpXrwsmNtePkxty1G1fYmDQo0wZcXS/wAGCQT4l4P+Fdb0RqsFMjMM0guE6huuU/X0WDjdhRpgBjWkAaHT7KFwLC3EOe2oQHEdmSSImQTy10XfFn3rLmw6R3tlVGd+q0Q4c1xNLD6rTpUKIbb1xtUK9WnldDi9Q5RG8qq1v3Rq1AWNOpP8R2bktJrAFBY+/kEZTshKAPBEOeNk9noUVGXjQoq5qAtEbprlCsbqiCfaxGoUqNwJnuQ1Zh4hUvOiDZbcNOxVNS6bzQlrUgbaqFc6SQg27Z0tBUnFYFHHMojIdO5OekLfhPoVRuyksL/qFvwn0KSI8ZNiBpCerZ9mYVwvTxElKpcPcIAK5ULSoEwOaL9gyEHvVApVI0atC1pVSe0EkBzHohjkqVmUXSsSu0HYBYmtVa2OyNXnk0cPPZek9UI2/wBlgdD6DWUifxOfqe4AQPr6rpXVWrwc2XbPX6e7hx64z+uZxXCKbplgM8wFx+J9H6QJIYB4d+gXo13UC5zFMu3z71hfD2Ty84vMLyyWz3BU0rVhnOJApucBqJcNgY4Lqr8tbw7ln0cJLmdYTFPK45wfdABn0hdY5W43+OLNZT+sx2JU3saO1o0NgAmcoggECDstLoViDS+ppla7I1jeIDM2p7yXFc82yrUqjC6nUYzM1zSR2TT97cCDp4KuyuzQeJEDrDp8Ouy9OGMxvh5OS9vb11lNWimlYtJpsJ3LQfkim016pXkUCmncUTlUXMUoEcVdScArCwclG4AgQIUDVngpUSJEqttTuU6dXXZAc8zsFmVnQTC1qdRmUzvwWS+JPigutq+mwSuXAjb9FK0uGN/DKjdXZfoGgBIBsoUTTHJTDCpBhXWhV1Y5JK7Ikg88Zh45IqlYAcFpttlay3VcM9tkEZRsgjaduiadFTShqdqOSJZbBENphTdDQTyVXSFq5zXQ0xGp5IyrRuXNlrA4HXRwDtNNjCGsBJDRuTr57rsKTA1vcB8gsc+LDLzW/HzZ4TUrgbi6r6g06nZIBETHDWFkVq9U7sqH/A79F3trSlrnnTM+R3gahC3dpAzcFlfjY/tr/wBef6ecXtGs86U6n+R2/otV1s9mGOY4EPLKvZ/EA7rCB6Eeq6YNTXNsHsc08R8+BScEmN0T5Fuc36ZGKWLbimwNP4czXR2dWEDXzB8lz3STosynZ1apcXVAWu5NEvAcI3OhOq6Do5X7JoP0qUezB3NOey4eG3kOaI6UU5srgf8A4PPm0Zh9FOPKWucpZ4G9GbjrLSg86k0GSebgMp+YWqAud/Z++bGj3B49Kj10oavTHns8okJi1WZUxaukQDVGsyQrMqZwUAjKEK6mAOCnlThqmhCu8/hCD6p3JaUKJTQDZQKk2iiwmKoo6tP1aulOSqKOrSV0JIjmm25V7LdEtpqbWKoqZRVzaSm1iuYEVW2khb2kXkNbsDLvGNB8/mjriqGMc+PdBMc+Q89kHZU35Rm1JaXExpqdfqVFjW6NWQEvInkeM8vvmtu97NPmTAA4ElNYUsrGt2MAnxQePVCHUmzALo7tdB9+K5dGuquVrQdy2Z4AfmVgYjijTLQ9rXka53AHxIPBT6UXbnVC1pOjWiNRoc2n09Vx7MBJeSHGXSSPxRJ+Xcs889NMOPbbvsGz5OtJLnDshjyKbdezDZh0o61Jk8GgRB303P3+aFYW0GU2OcSCCWsLoiRtlJAB5jnurbm9FJrM0S4DOZ7FPjAMS4x6meWufd30oXHcJe4tuLcxWYNvw1mfAeen3tA9XE2XNncADLUbbVQ+idHsOR3DeJ4rVt8XGdrKhaM+rC0Q3XZp5LF6WW1NwqPksqNY8BzNHPGX+W/mDt5rntN9o6mOV/zYn0AuIsqQAJIdUkf9xy7RmoXk+C4+6jSZbtbkfnJ6yWu/hucXOIHAiePALsOgONVLmm81NS2plD9i6Wh2o7p+4W2Ge7plnhddnU5UsqnlT5Vsx2qITZVZlTZEEMqbKrMqUKohlUS1WkKMKKrhNCtyqJCohCWVSSUEYSTp1RnBqsaxWhim1iiINarWtUg1Ta1Bn4w3+HHNzfkZ/JD2+IM/l5hmAlrZiRrseeqI6QVMlEugmDrG+uk/Neb3GIkPDtHAg5QTkmdiI1dHImdeS4yta8eMvt6fY9KKbRFVzRUg5hIIlunAyOJhV2tZ1euary6GHs0yBlYY023IJk6leZ4ZZHUuJa6HPgg5xl3cSSMrRr4rVw/pa+3b2IeC46OMtP8AWTMidOf68d9e2l49+na3LQajyRMjbmBAMeZAXNU7tlvUcXuJGXRkjrABPy14rDxDHbmpRguyPc8DLMQ3V0d23nI1XMXt5UaXdY5xJnXg7wG06+S5uPe/xZZj4dPjeMUrisWtfAaANQ8vLSJ14ctRppxVd5iFe4ZDHUgKYJL/AHiG6NkkjQ7bd64wX1QbPdJ4/Ua+XotGxxp7W1GOaDmaDOklwMkERsVMeGyrly7gttWrUdJvaZcHAAkuykHQagQP+Fq0AKtF4q3PZEiZDqhfJPWOjhvDQZ3koPAxRfbuGjHGsTmc5vZZlaIg6a5Xek8dBcct6ArxbVAAKBnKDBcAc4cToJjQjQxwWl45fbOclnpp4PaYZBLjVc+S2TmaQHAjOMgAg7cSJHfHd4FXYzqqVNpa2DHhzPHz4rzHo7XLab3ODAGujO4gNBI2jie5dH0Pxc1rpjW669p8QMo1IA9fVdddObluPUymKYvTSu2ZEBIBMSmlESKikokoHcVFLMmzKh4UCE5cmLkUySQKWZAkk2ZJBBrFMBM0qQKgcBWNTNUkFN3bioxzDs5pH+68Nxdj6VV9F+9NxbBGmWSQR6z5r3hch056JC7HW0oFdojkKrRsCeDhwPl4NSrMrPTyP2qo3Nlc4BwhwmQ5vIzuqWXEbtafI/ki7ize0ua9pa9vvNIg+PggHthOrq5Dhi5kFzS6Npe7Q89VZc4yHxNLbjmk+EkbLIKjKuom6Mfdg/h0+GfzhWuxBkACi0Rxku+uvzWcSmlNAqvdSIAAB1IEhs84JOuvzVbK5AIHHfmRyVBKaU0bTleofsmw/K19w4b9hnf8R/L1Xn2BYZ19SC7K0QXH8Uch3r1CwuOrY1lPRrRDW8gpaO268JCsFzNLEXcVe3EVzs03+uS6xYgvO9WsuFU01etTdas/rkhVVB/WpdYgxVSzomhRqJdYhs6fOiiesTZ0PnTlyIvzJlTnSQEAKQCTSnkIJJwTyTBwSL0Eiq6icPUHlB5z0zwKvmNWiM4Myzd7J3DRxHcvP7tlQEh7COeh0X0A+kCg7rCqb/eaD4gGFdq+fsyZe33PRpjhxjkTmA8nSAsqr0Nbyb/46f8ApTavJJTF45r1E9ESNgz/AMVL/SpjAK40Dy3+wNp/+gCnZZJ+3mVO2e73WOPeAY9U4tSPeIHcNT8tvNejO6IF3vFzjzcST81dS6HtHAKbq6xcVgFR1MmBvGvPddhaPcY0K1bXo4GbALVoYaApdpuMenTcr2UCtttipCzCaTbKp0SiGNhG+zdyY0E0igOUg5WdRHBIMVEcyWZT6tNkVDBylKYNTwgfMnzKICcBVEpSTJID1EbpJLlUwnSSQSVbkkkoScpJIKXbpJJIqt6iUkkQk5TJIp1Nu6SSIvamcmSSCIUSnSVCOwVZSSQVhIJ0kREpikkikFIJJKhJJJIP/9k="
     datosImagen = urlopen(urlImagen)  
     imagenBinaria = datosImagen.read()  
     imagen = Image.open(BytesIO(imagenBinaria))
@@ -48,54 +48,62 @@ def descargarImagenChemex():
 
 def mostrarCapsulas():
     limpiarVentana()
-    etiqueta = tk.Label(ventana, image=ventana.capsula)
-    etiqueta.place(width=ancho, height=alto)
+
+    etiqueta = tk.Label(ventana, image=ventana.capsulas)
+    etiqueta.place(x=500, y=100, width=300, height=400)
     
     label = tk.Label(ventana, text="Elegiste la Cafetera de capsulas", font=("Arial", 16))
-    label.pack(pady=20)
+    label.place(x=500, y=50)
+
+    label = tk.Label(ventana, text="La primera cafetera de cápsulas, Nespresso, fue lanzada por Nestlé en 1986.", font=("Arial", 16))
+    label.place(x=300, y=100)
 
     boton_volver = tk.Button(ventana, text="Volver", font=("Arial", 12), command=mostrarMenu)
-    boton_volver.pack(pady=10)
+    boton_volver.place(x=600, y=500)
 
 def mostrarItaliana():
     limpiarVentana()
-    etiqueta = tk.Label(ventana, image=ventana.fondo)
-    etiqueta.place(width=ancho, height=alto)
     
-    etiqueta = tk.Label(ventana, image=ventana.capsula)
-    etiqueta.place(width=ancho, height=alto)
+    etiqueta = tk.Label(ventana, image=ventana.italiana)
+    etiqueta.place(x=500, y=100, width=300, height=400)
     
     label = tk.Label(ventana, text="Elegiste la Cafetera italiana", font=("Arial", 16))
-    label.pack(pady=20)
+    label.place(x=500, y=50)
+
+    label = tk.Label(ventana, text="La cafetera italiana, o Moka pot, fue inventada en 1933 por Alfonso Bialetti.", font=("Arial", 16))
+    label.place(x=300, y=100)
 
     boton_volver = tk.Button(ventana, text="Volver", font=("Arial", 12), command=mostrarMenu)
-    boton_volver.pack(pady=10)
+    boton_volver.place(x=600, y=500)
     
 def mostrarExpresso():
     limpiarVentana()
-    etiqueta = tk.Label(ventana, image=ventana.fondo)
-    etiqueta.place(width=ancho, height=alto)
     
-    etiqueta = tk.Label(ventana, image=ventana.capsula)
-    etiqueta.place(width=ancho, height=alto)
+    etiqueta = tk.Label(ventana, image=ventana.expresso)
+    etiqueta.place(x=500, y=100, width=300, height=400)
+    
     label = tk.Label(ventana, text= "Elegiste la Cafetera de expresso", font=("Arial", 16))
-    label.pack(pady=20)
+    label.place(x=500, y=50)
+
+    label = tk.Label(ventana, text="En 1992, De'Longhi desarrolló la cafetera Bar, su primera cafetera espresso.", font=("Arial", 16))
+    label.place(x=300, y=100)
 
     boton_volver = tk.Button(ventana, text="Volver", font=("Arial", 12), command=mostrarMenu)
-    boton_volver.pack(pady=10)
+    boton_volver.place(x=600, y=500)
 
 def mostrarChemex():
     limpiarVentana()
-    etiqueta = tk.Label(ventana, image=ventana.fondo)
-    etiqueta.place(width=ancho, height=alto)
-    
-    etiqueta = tk.Label(ventana, image=ventana.capsula)
+    etiqueta = tk.Label(ventana, image=ventana.chemex)
     etiqueta.place(x=500, y=100, width=300, height=400)
+    
     label = tk.Label(ventana, text="Elegiste la Cafetera chemex", font=("Arial", 16))
-    label.pack(pady=20)
+    label.place(x=500, y=50)
+
+    label = tk.Label(ventana, text="La cafetera Chemex fue creada en 1941 por el químico alemán Peter Schlumbohm.", font=("Arial", 16))
+    label.place(x=300, y=100)
 
     boton_volver = tk.Button(ventana, text="Volver", font=("Arial", 12), command=mostrarMenu)
-    boton_volver.pack(pady=10)
+    boton_volver.place(x=600, y=500)
 
 def limpiarVentana():  
     for widget in ventana.winfo_children():  
@@ -108,19 +116,19 @@ def mostrarMenu():
     etiqueta.place(width=ancho, height=alto) 
     
     label = tk.Label(ventana, text="Menú Principal", font=("Arial", 18, "bold"))
-    label.pack(pady=20)
-
+    label.place(x=550, y=50)
+    
     boton1 = tk.Button(ventana, text="Cafetera de capsulas", font=("Arial", 14), width=20, command=mostrarCapsulas)
-    boton1.pack(pady=10)
-
+    boton1.place(x=550, y=50)
+    
     boton2 = tk.Button(ventana, text= "Cafetera italiana", font=("Arial", 14), width=20, command=mostrarItaliana)
-    boton2.pack(pady=10)
+    boton2.place(x=550, y=100)
     
     boton3 = tk.Button(ventana, text="Cafetera de expresso", font=("Arial", 14), width=20, command=mostrarExpresso)
-    boton3.pack(pady=10)
+    boton3.place(x=550, y=150)
 
     boton4 = tk.Button(ventana, text="Cafetera chemex", font=("Arial", 14), width=20, command=mostrarChemex)
-    boton4.pack(pady=10)
+    boton4.place(x=550, y=200)
 
 def main():
     global ventana
@@ -133,53 +141,47 @@ def main():
     alto = ventana.winfo_screenheight()  
     ventana.geometry(f"{ancho}x{alto}")
 
+
     imagen=descargarImagenPortada()
     imagenRedimensionada = imagen.resize((ancho, alto),Image.Resampling.LANCZOS)
     portadaTk = ImageTk.PhotoImage(imagenRedimensionada)
     ventana.portada=portadaTk
     etiqueta = tk.Label(ventana, image=ventana.portada)
     etiqueta.place(width=ancho, height=alto)
-   
+
 
     imagen=descargarImagenFondo()
     imagenRedimensionada = imagen.resize((ancho, alto),Image.Resampling.LANCZOS)
     fondoTk = ImageTk.PhotoImage(imagenRedimensionada)
     ventana.fondo=fondoTk
-   
+
 
     imagen=descargarImagenCapsulas()
-    imagenRedimensionada = imagen.resize((ancho, alto),Image.Resampling.LANCZOS)
+    imagenRedimensionada = imagen.resize((500, 300),Image.Resampling.LANCZOS)
     capsulaTk = ImageTk.PhotoImage(imagenRedimensionada)
-    ventana.capsula=capsulaTk
-    etiqueta = tk.Label(ventana, image=ventana.capsula)
-    etiqueta.place(width=ancho, height=alto)
-    
+    ventana.capsulas=capsulaTk
+
+
     imagen=descargarImagenItaliana()
-    imagenRedimensionada = imagen.resize((ancho, alto),Image.Resampling.LANCZOS)
+    imagenRedimensionada = imagen.resize((500, 300),Image.Resampling.LANCZOS)
     italianaTk = ImageTk.PhotoImage(imagenRedimensionada)
     ventana.italiana=italianaTk
-    etiqueta = tk.Label(ventana, image=ventana.italiana)
-    etiqueta.place(width=ancho, height=alto)
-
+    
 
     imagen=descargarImagenExpresso()
-    imagenRedimensionada = imagen.resize((ancho, alto),Image.Resampling.LANCZOS)
-    italianaTk = ImageTk.PhotoImage(imagenRedimensionada)
-    ventana.italiana=italianaTk
-    etiqueta = tk.Label(ventana, image=ventana.italiana)
-    etiqueta.place(width=ancho, height=alto)
+    imagenRedimensionada = imagen.resize((500, 300),Image.Resampling.LANCZOS)
+    expressoTk = ImageTk.PhotoImage(imagenRedimensionada)
+    ventana.expresso=expressoTk
+
 
     imagen=descargarImagenChemex()
-    imagenRedimensionada = imagen.resize((ancho, alto),Image.Resampling.LANCZOS)
+    imagenRedimensionada = imagen.resize((500, 300),Image.Resampling.LANCZOS)
     chemexTk = ImageTk.PhotoImage(imagenRedimensionada)
     ventana.chemex=chemexTk
-    etiqueta = tk.Label(ventana, image=ventana.chemex)
-    etiqueta.place(width=ancho, height=alto)
 
-    
 
     boton5 = tk.Button(ventana, text="Inicio", font=("Arial", 14), width=20, command=mostrarMenu)
-    boton5.pack(pady=10)
+    boton5.place(x=550, y=110)
     
     ventana.mainloop()
 
